@@ -1,0 +1,16 @@
+# Python files
+__pycache__/
+*.pyc
+
+# VirtualEnv
+.venv/
+venv/
+env/
+
+# Local Database
+db.sqlite3
+temp/
+
+# Node
+node_modules/
+.vercel

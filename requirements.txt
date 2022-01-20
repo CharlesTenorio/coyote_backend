@@ -1,0 +1,19 @@
+Django==4.0.1
+gunicorn
+
+# APIs
+django-filter==21.1
+djangorestframework==3.13.1
+django-cors-headers==3.2.1
+psycopg2-binary==2.8.4
+django-heroku
+python-decouple
+python-dateutil
+Markdown==3.3.6
+Pillow==9.0.0
+
+drf-yasg2==1.19.4 # Swegger
+
+
+cowpy==1.0.3
+whitenoise==5.2.0
