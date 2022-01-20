@@ -139,7 +139,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = path.join(BASE_DIR, 'temp', 'staticfiles')
 STATICFILES_DIRS = [
-    # path.join(BASE_DIR, 'statics')
+    path.join(BASE_DIR, 'statics')
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
@@ -150,7 +150,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-if not DEBUG:
+if config('ENV', default='DEV') == 'PROD':
     ALLOWED_HOSTS = ['*']
 
     CORS_ORIGIN_ALLOW_ALL = True

@@ -9,7 +9,7 @@ env/
 
 # Local Database
 db.sqlite3
-temp/
+# temp/
 
 # Node
 node_modules/
