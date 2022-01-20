@@ -160,6 +160,8 @@ if not DEBUG:
 
     db_from_env = dj_database_url.config(conn_max_age=django_heroku.MAX_CONN_AGE, ssl_require=True)
     DATABASES["default"].update(db_from_env)  # noqa F405
+    
+    print('Debug:', DEBUG, '\nDatabases', DATABASES)
 
     # seta as configurações do heroku
     django_heroku.settings(locals())
